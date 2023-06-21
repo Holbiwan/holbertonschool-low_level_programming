@@ -3,20 +3,20 @@
 #include <stdio.h>
 
 /**
- * main - Prints single digit base 10 from 0 followed by a new line.
+ * main - prints all single digit numbers
  *
- * Return : 0 (Success)
- *
+ * Return: 0 (Sucess)
  */
-
 int main(void)
+
 {
-	int num;
 
-	for (num = 0; num < 10; num++)
-		putchar((num % 10) + '0');
+int d;
 
-	putchar('\n');
+for (d = '0'; d <= '9'; d++)
+putchar(d);
+putchar('\n');
 
-	return (0);
+return (0);
+
 }
