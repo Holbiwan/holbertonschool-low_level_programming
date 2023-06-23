@@ -1,12 +1,14 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
 /**
- * main - prints all single digit numbers
+ * main - prints digit numbers
  *
  * Return: 0 (Sucess)
+ *
  */
+
 int main(void)
 
 {
