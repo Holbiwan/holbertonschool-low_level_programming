@@ -21,11 +21,11 @@ else if (s[i] >= '0' && s[i] <= '9')
 conv = conv * 10 + s[i] - '0';
 num = 1;
 }
-else if (num == 1 && (s[i] < '0' || s [i] > '9'))
+else if (num == 1 && (s[i] < '0' || s[i] > '9'))
 break;
 i++;
 }
-if (neg% 2 == 0)
+if (neg % 2 == 0)
 return (conv);
 else
 return (-conv);
