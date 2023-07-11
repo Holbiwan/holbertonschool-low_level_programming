@@ -15,7 +15,7 @@ int i, len;
 i = 0;
 if (!str)
 return (NULL);
-while (*(str +i))
+while (*(str + i))
 ++i;
 len = i;
 s = malloc(sizeof(char) * (len + 1));
