@@ -5,7 +5,8 @@
  * @array: array to search in
  * @size: size of the array
  * @cmp: pointer to function compared values
- */ 
+ * Return:index of the element
+ */
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
