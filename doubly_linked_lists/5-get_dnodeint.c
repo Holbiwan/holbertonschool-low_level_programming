@@ -2,7 +2,7 @@
 
 /**
  * get_dnodeint_at_index - returns nth node of a dlistint_t linked list.
- * @head: head of the dlistint_t list.
+ * @head:head of the dlistint_t list
  * @index: locate of the node to return.
  *
  * Return: NULL if the node does not exist 
