@@ -5,8 +5,10 @@
  * @head:head of the dlistint_t list
  * @index: locate of the node to return.
  *
- * Return:NULL if the node does not exist, otherwise the node address 
+ * Return: If the node does not exist - NULL.
+ *         Otherwise - the address of the located node.
  */
+
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	for (; index != 0; index--)
