@@ -1,42 +1,37 @@
 #include "main.h"
-
 /**
- * create_file - function that creates a file.
- * @filename: File to create.
- * @text_content: finished string to write in the file.
+ * _strlen - Switch the value of 2 variables
+ * @s: Char that receives
  *
- * Return: 1 if succeed or -1 if failed .
+ * Return: On success 1 or -1 on error
  */
+int _strlen(char *s)
+{
+	int count = 0;
 
+	while (*(s + count))
+		count++;
+	return (count);
+}
+/**
+ * create_file - function that creates a file
+ *
+ * @filename: file to create
+ * @text_content: size to print
+ * Return: 1 on success and -1 on failure
+ */
 int create_file(const char *filename, char *text_content)
 {
-mode_t mode;
-int flags;
-int fd;
+	int file;
 
-if (filename == NULL)
-return (-1);
-
-mode = S_IRUSR | S_IWUSR;
-flags = O_CREAT | O_WRONLY | O_TRUNC;
-
-fd = open(filename, flags, mode);
-
-if (fd == -1)
-return (-1);
-
-if (text_content != NULL)
-{
-size_t text_len = strlen(text_content);
-ssize_t bytes_written = write(fd, text_content, text_len);
-
-if (bytes_written == -1 || (size_t) bytes_written != text_len)
-{
-close(fd);
-return (-1);
-}
-}
-
-close(fd);
-return (1);
+	if (!filename)
+		return (-1);
+	file = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	if (text_content == NULL)
+		return (1);
+	if (file == -1)
+		return (-1);
+	write(file, text_content, _strlen(text_content));
+	close(file);
+	return (1);
 }
