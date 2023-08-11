@@ -4,7 +4,7 @@
  * hash_table_set - Function adds an element to the hash table
  * @ht: hash table to add or update the key
  * @key: key value of the element
- * @value: size of the array 
+ * @value: size of the array
  *
  * Return: 1 for success or 0 when failed
  */
