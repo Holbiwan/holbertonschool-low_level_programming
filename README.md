@@ -2,9 +2,8 @@
 
 ![This is an image](https://zupimages.net/up/23/38/xkgl.png)
 
-This repo contains :
 
-## Major Topics:
+## Major Topics in this repo:
 + Hello_world
 + Variables_if_else_while
 + Functions_nested_loops
@@ -21,6 +20,7 @@ This repo contains :
 + Bit_manipulation
 + Doubly_linked_lists
 + Dynamic_libraries
++ Search algorithms
 
 ## General Requirements
 * Allowed editors: **vi**, **vim**, **emacs**
